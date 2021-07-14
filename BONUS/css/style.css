@@ -1,0 +1,95 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(https://i.pinimg.com/originals/1c/ea/ea/1ceaeaad0b0c8aea02bae1fea7f865fc.jpg);
+    background-position: bottom;
+    animation: sfondo 50s linear 0s infinite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+  
+  @keyframes sfondo {
+    from {
+      background-position:  200px 0;
+    }
+    
+    to {
+      background-position:  0 200px;
+    }
+}
+
+#your_password {
+    border: 10px solid;
+    border-image-slice: 1;
+    border-width: 10px;  
+    border-image-source: linear-gradient(to right, #b91515, #ff7112);        
+    padding: 50px 30px;
+    background-color: blue;
+    animation: sfondo-testo 4s infinite;
+    animation: salto 1s ease 0s infinite normal;
+    animation: colore-testo 1s infinite;
+    box-shadow: inset 0px 10px 27px -8px #141414, inset 0px -10px 27px -8px #A31925, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+@keyframes sfondo-testo {
+    0% {
+        background-color: blue;
+    }
+    50% {
+        background-color: lightblue;
+    }
+
+    100% {
+        background-color: blue;
+    }
+}
+
+@keyframes salto {
+    0% { 
+        transform:translateY(0);
+    }
+    20% {
+        transform:translateY(0);
+    }
+    40% {
+        transform:translateY(-30px);
+    }
+    50% {
+        transform:translateY(0);
+    }
+    60% {transform:translateY(-15px);
+    }
+    80% {
+        transform:translateY(0);
+    }
+    100% {
+        transform:translateY(0);
+    }
+}
+
+@keyframes colore-testo {
+    0% {
+        color: white;
+    }
+    25% {
+        color: gray;
+    }
+
+    50% {
+        color: black;
+    }
+
+    75% {
+        color: gray;
+    }
+
+    100% {
+        color: white;
+    }
+}
